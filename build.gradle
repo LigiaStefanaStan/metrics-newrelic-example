@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.newrelic.telemetry:dropwizard-metrics-newrelic:0.4.0",
+                   'org.apache.httpcomponents:fluent-hc:4.5.12'
+}
